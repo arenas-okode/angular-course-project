@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Output } from "@angular/core";
 
 
 @Component({
@@ -6,4 +6,14 @@ import { Component } from "@angular/core";
     templateUrl: "./header.component.html",
 
 })
-export class HeaderComponent { }
+export class HeaderComponent {
+    collapsed = true;
+
+    @Output() recipesNavEvent;
+    @Output() shoplistNavEvent;
+
+
+
+
+
+}

@@ -1,1 +1,12 @@
-<app-recipe-item></app-recipe-item>
+<div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-success">New Recipie</button>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-xs-12" *ngFor="let recipie of recipies">
+        <app-recipe-item [recipie]="recipie"></app-recipe-item>
+        <br>
+    </div>
+</div>

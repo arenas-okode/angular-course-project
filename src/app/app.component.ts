@@ -6,4 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  private recipes:boolean= true;
+
+  recipesNavEventHandler():void {
+    this.recipes = true;
+  }
+
+  shoplistNavEventHandler():void {
+    this.recipes = false;
+  }
+
+
+
 }
